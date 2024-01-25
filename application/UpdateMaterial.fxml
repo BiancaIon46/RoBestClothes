@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="application.UpdateMaterialController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="7.0" prefHeight="365.0" prefWidth="925.0">
+         <children>
+            <Button layoutX="91.0" layoutY="51.0" mnemonicParsing="false" onAction="#ShowMaterialScene" text="Inapoi">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="480.0" layoutY="236.0" prefHeight="23.0" prefWidth="68.0" text="Calitate">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Pret" layoutX="584.0" layoutY="179.0" />
+            <Label layoutX="509.0" layoutY="178.0" prefHeight="23.0" prefWidth="39.0" text="Pret">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Calitate" layoutX="584.0" layoutY="232.0" />
+            <Button layoutX="788.0" layoutY="181.0" mnemonicParsing="false" onAction="#updateMaterialPrice" prefHeight="23.0" prefWidth="72.0" text="update">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="788.0" layoutY="234.0" mnemonicParsing="false" onAction="#updateMaterialQuality" prefHeight="23.0" prefWidth="72.0" text="update">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="391.0" layoutY="181.0" mnemonicParsing="false" onAction="#updateMaterialName" prefHeight="23.0" prefWidth="72.0" text="update">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="391.0" layoutY="234.0" mnemonicParsing="false" onAction="#updateMaterialColour" prefHeight="23.0" prefWidth="72.0" text="update">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="99.0" layoutY="245.0" prefHeight="23.0" prefWidth="68.0" text="Culoare">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Nume" layoutX="204.0" layoutY="188.0" />
+      <Label layoutX="118.0" layoutY="192.0" text="Nume">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="108.0" prefHeight="28.0" prefWidth="226.0" text="Update date material" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Culoare" layoutX="204.0" layoutY="241.0" />
+   </children>
+</AnchorPane>

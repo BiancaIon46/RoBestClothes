@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="674.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddProductController">
+   <children>
+      <Label layoutX="99.0" layoutY="245.0" prefHeight="23.0" prefWidth="68.0" text="Culoare">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="Adaugare" layoutX="902.0" layoutY="538.0" mnemonicParsing="false" onAction="#extractProductInfo" text="Adăugare">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="Nume" layoutX="204.0" layoutY="188.0" />
+      <Label layoutX="118.0" layoutY="192.0" text="Nume">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="108.0" prefHeight="28.0" prefWidth="187.0" text="Adăugare produs" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Culoare" layoutX="204.0" layoutY="241.0" />
+      <Button layoutX="80.0" layoutY="73.0" mnemonicParsing="false" onAction="#MenuPageScene" text="Inapoi">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="73.0" layoutY="409.0" prefHeight="23.0" prefWidth="95.0" text="Cod produs">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NrBucati" layoutX="204.0" layoutY="352.0" />
+      <Label layoutX="84.0" layoutY="356.0" prefHeight="23.0" prefWidth="84.0" text="Nr. bucati">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="CodProdus" layoutX="204.0" layoutY="405.0" />
+      <Label layoutX="99.0" layoutY="299.0" prefHeight="23.0" prefWidth="68.0" text="Marime">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Marime" layoutX="204.0" layoutY="295.0" />
+      <TextField fx:id="Pret" layoutX="204.0" layoutY="459.0" />
+      <Label layoutX="133.0" layoutY="463.0" prefHeight="23.0" prefWidth="35.0" text="Pret">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <ScrollPane hbarPolicy="NEVER" layoutX="522.0" layoutY="234.0" prefHeight="266.0" prefWidth="493.0">
+         <content>
+            <HBox prefHeight="263.0" prefWidth="490.0">
+               <children>
+                  <VBox fx:id="VBoxCol1" prefHeight="263.0" prefWidth="245.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" top="15.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox fx:id="VBoxCol2" prefHeight="263.0" prefWidth="245.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" top="15.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+      <Text layoutX="522.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alegeti materialele din compozitia produsului." wrappingWidth="493.00000374842784">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="application.UpdateHeadquarterController">
+   <children>
+      <AnchorPane layoutX="-59.0" layoutY="2.0" prefHeight="610.0" prefWidth="1230.0">
+         <children>
+            <Label layoutX="200.0" layoutY="335.0" text="Oras">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="176.0" layoutY="288.0" prefHeight="21.0" prefWidth="68.0" text="Director">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="Director" layoutX="279.0" layoutY="282.0" prefHeight="31.0" prefWidth="194.0" />
+            <Label layoutX="154.0" layoutY="381.0" prefHeight="23.0" prefWidth="89.0" text="CodFiliala">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CodFiliala" layoutX="279.0" layoutY="377.0" prefHeight="31.0" prefWidth="194.0" />
+            <TextField fx:id="Oras" layoutX="279.0" layoutY="331.0" prefHeight="31.0" prefWidth="194.0" />
+            <Text layoutX="123.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Se afiseaza numele, prenumele si CNP-ul angajatilor.">
+               <font>
+                  <Font name="Times New Roman Italic" size="19.0" />
+               </font>
+            </Text>
+            <Button layoutX="493.0" layoutY="283.0" mnemonicParsing="false" onAction="#updateHeadquarterDirector" prefHeight="23.0" prefWidth="72.0" text="update">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="493.0" layoutY="333.0" mnemonicParsing="false" onAction="#updateHeadquarterName" prefHeight="23.0" prefWidth="72.0" text="update">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="493.0" layoutY="379.0" mnemonicParsing="false" onAction="#updateHeadquarterCode" prefHeight="23.0" prefWidth="72.0" text="update">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="1115.0" layoutY="486.0" mnemonicParsing="false" onAction="#updateHeadquartersProviders" prefHeight="23.0" prefWidth="72.0" text="update">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="436.0" layoutY="126.0" text="Update date filiala" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="92.0" layoutY="68.0" mnemonicParsing="false" onAction="#ShowHeadquarterScene" text="Inapoi">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <ScrollPane hbarPolicy="NEVER" layoutX="546.0" layoutY="270.0" prefHeight="248.0" prefWidth="493.0">
+         <content>
+            <HBox prefHeight="263.0" prefWidth="490.0">
+               <children>
+                  <VBox fx:id="VBoxCol1" prefHeight="263.0" prefWidth="245.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" top="15.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox fx:id="VBoxCol2" prefHeight="263.0" prefWidth="245.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" top="15.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+      <Text layoutX="546.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alegeti furnizorii care vor colabora cu aceasta filiala." wrappingWidth="493.00000374842784">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

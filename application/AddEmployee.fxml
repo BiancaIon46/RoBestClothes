@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="1218.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddEmployeeController">
+   <children>
+      <Label layoutX="66.0" layoutY="159.0" text="Nume">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="48.0" text="Adăugare angajat" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="209.0" text="Prenume">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="256.0" text="CNP">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="342.0" text="Dată naștere">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="497.0" layoutY="159.0" text="Județ">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="209.0" text="Oraș">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="390.0" text="Sex">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Nume" layoutX="169.0" layoutY="155.0" />
+      <TextField fx:id="Prenume" layoutX="169.0" layoutY="205.0" />
+      <TextField fx:id="CNP" layoutX="169.0" layoutY="252.0" />
+      <TextField fx:id="Oras" layoutX="584.0" layoutY="205.0" />
+      <TextField fx:id="Judet" layoutX="584.0" layoutY="155.0" />
+      <CheckBox fx:id="sex_F" layoutX="170.0" layoutY="388.0" mnemonicParsing="false" text="F" />
+      <CheckBox fx:id="sex_M" layoutX="239.0" layoutY="388.0" mnemonicParsing="false" text="M" />
+      <Label layoutX="482.0" layoutY="256.0" text="Stradă">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Strada" layoutX="584.0" layoutY="252.0" />
+      <Label layoutX="512.0" layoutY="298.0" text="Nr">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Nr" layoutX="584.0" layoutY="294.0" />
+      <Label layoutX="72.0" layoutY="298.0" text="Mail">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Mail" layoutX="170.0" layoutY="294.0" />
+      <Button fx:id="Adaugare" layoutX="1049.0" layoutY="442.0" mnemonicParsing="false" onAction="#extractEmployeeInfo" text="Adăugare">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="DataNastere" layoutX="169.0" layoutY="338.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="889.0" layoutY="159.0" text="Filială">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="837.0" layoutY="209.0" text="Departament">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="Filiala" layoutX="974.0" layoutY="155.0" prefWidth="150.0" AnchorPane.bottomAnchor="370.0" AnchorPane.leftAnchor="974.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="155.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ChoiceBox>
+      <ChoiceBox fx:id="Departament" layoutX="974.0" layoutY="205.0" prefHeight="31.0" prefWidth="194.0" />
+      <TextField fx:id="Salariu" layoutX="974.0" layoutY="264.0" prefHeight="31.0" prefWidth="194.0" />
+      <Label layoutX="884.0" layoutY="268.0" text="Salariu">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="841.0" layoutY="327.0" text="Dată angajare">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="DataAngajare" layoutX="974.0" layoutY="327.0" prefHeight="31.0" prefWidth="194.0" />
+      <Button layoutX="40.0" layoutY="33.0" mnemonicParsing="false" onAction="#MenuPageScene" text="Inapoi">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

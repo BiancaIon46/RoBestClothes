@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="542.0" prefWidth="1354.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UpdateEmployeeController">
+   <children>
+      <AnchorPane layoutX="-77.0" layoutY="-125.0" prefHeight="194.0" prefWidth="167.0" />
+      <Label layoutX="76.0" layoutY="169.0" text="Nume">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="219.0" text="Prenume">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="266.0" text="CNP">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="352.0" text="Dată naștere">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="507.0" layoutY="169.0" text="Județ">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="510.0" layoutY="219.0" text="Oraș">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="400.0" text="Sex">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Nume" layoutX="179.0" layoutY="165.0" />
+      <TextField fx:id="Prenume" layoutX="179.0" layoutY="215.0" />
+      <TextField fx:id="CNP" layoutX="179.0" layoutY="262.0" />
+      <TextField fx:id="Oras" layoutX="594.0" layoutY="215.0" />
+      <TextField fx:id="Judet" layoutX="594.0" layoutY="165.0" />
+      <CheckBox fx:id="sex_F" layoutX="180.0" layoutY="398.0" mnemonicParsing="false" text="F" />
+      <CheckBox fx:id="sex_M" layoutX="249.0" layoutY="398.0" mnemonicParsing="false" text="M" />
+      <Label layoutX="492.0" layoutY="266.0" text="Stradă">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Strada" layoutX="594.0" layoutY="262.0" />
+      <Label layoutX="522.0" layoutY="308.0" text="Nr">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Nr" layoutX="594.0" layoutY="304.0" />
+      <Label layoutX="82.0" layoutY="308.0" text="Mail">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Mail" layoutX="180.0" layoutY="304.0" />
+      <DatePicker fx:id="DataNastere" layoutX="179.0" layoutY="348.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="966.0" layoutY="167.0" text="Filială">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="914.0" layoutY="217.0" text="Departament">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="Filiala" layoutX="1051.0" layoutY="163.0" prefHeight="31.0" prefWidth="194.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ChoiceBox>
+      <ChoiceBox fx:id="Departament" layoutX="1051.0" layoutY="213.0" prefHeight="31.0" prefWidth="194.0" />
+      <TextField fx:id="Salariu" layoutX="1051.0" layoutY="272.0" prefHeight="31.0" prefWidth="194.0" />
+      <Label layoutX="961.0" layoutY="276.0" text="Salariu">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="918.0" layoutY="335.0" text="Dată angajare">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="DataAngajare" layoutX="1051.0" layoutY="335.0" prefHeight="31.0" prefWidth="194.0" />
+      <Button fx:id="updateNume" layoutX="383.0" layoutY="168.0" mnemonicParsing="false" onAction="#updateName" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="492.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update date angajat" wrappingWidth="219.6708984375">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="Adaugare11" layoutX="383.0" layoutY="217.0" mnemonicParsing="false" onAction="#updateFirstName" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Adaugare12" layoutX="383.0" layoutY="264.0" mnemonicParsing="false" onAction="#updateCNP" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Adaugare13" layoutX="383.0" layoutY="306.0" mnemonicParsing="false" onAction="#updateMail" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Adaugare14" layoutX="383.0" layoutY="354.0" mnemonicParsing="false" onAction="#updateBirthday" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Adaugare15" layoutX="808.0" layoutY="167.0" mnemonicParsing="false" onAction="#updateCity" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="64.0" layoutY="39.0" mnemonicParsing="false" onAction="#ShowEmployeeScene" text="Inapoi">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Adaugare151" layoutX="808.0" layoutY="217.0" mnemonicParsing="false" onAction="#updateCityDepartment" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Adaugare152" layoutX="808.0" layoutY="260.0" mnemonicParsing="false" onAction="#updateStreet" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Adaugare153" layoutX="808.0" layoutY="306.0" mnemonicParsing="false" onAction="#updateNr" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Adaugare154" layoutX="1258.0" layoutY="165.0" mnemonicParsing="false" onAction="#updateHeadquarter" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Adaugare1541" layoutX="1258.0" layoutY="217.0" mnemonicParsing="false" onAction="#updateDepartment" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Adaugare1542" layoutX="1258.0" layoutY="274.0" mnemonicParsing="false" onAction="#updateSalary" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Adaugare1543" layoutX="1258.0" layoutY="337.0" mnemonicParsing="false" onAction="#updateHireday" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Adaugare141" layoutX="383.0" layoutY="395.0" mnemonicParsing="false" onAction="#updateSex" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="603.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UpdateProviderController">
+   <children>
+      <AnchorPane layoutX="-166.0" layoutY="-305.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="71.0" layoutY="305.0" prefHeight="23.0" prefWidth="103.0" text="Cod furnizor">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Nume" layoutX="216.0" layoutY="218.0" />
+      <Label layoutX="122.0" layoutY="222.0" text="Nume">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="CodFurnizor" layoutX="216.0" layoutY="301.0" />
+      <Button layoutX="70.0" layoutY="63.0" mnemonicParsing="false" onAction="#ShowProvidersScene" text="Inapoi">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="74.0" layoutY="382.0" prefHeight="23.0" prefWidth="97.0" text="Nr. contract">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NrContract" layoutX="216.0" layoutY="378.0" />
+      <Label layoutX="63.0" layoutY="456.0" text="Dată achizitie">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="DataAchizitie" layoutX="216.0" layoutY="452.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="430.0" layoutY="91.0" text="Update date furnizor" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Text layoutX="571.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alegeti materialele furnizate." wrappingWidth="227.00000374842784">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+      <ScrollPane hbarPolicy="NEVER" layoutX="552.0" layoutY="222.0" prefHeight="266.0" prefWidth="493.0">
+         <content>
+            <HBox prefHeight="263.0" prefWidth="490.0">
+               <children>
+                  <VBox fx:id="VBoxCol1" prefHeight="263.0" prefWidth="245.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" top="15.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox fx:id="VBoxCol2" prefHeight="263.0" prefWidth="245.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" top="15.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+      <Button fx:id="updateNume" layoutX="430.0" layoutY="220.0" mnemonicParsing="false" onAction="#updateProviderName" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateCodFurnizor" layoutX="430.0" layoutY="303.0" mnemonicParsing="false" onAction="#updateProviderCode" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateNrContract" layoutX="430.0" layoutY="380.0" mnemonicParsing="false" onAction="#updateContractNr" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateDataAchizitie" layoutX="430.0" layoutY="454.0" mnemonicParsing="false" onAction="#updateAcquisitionDate" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateNume4" layoutX="1072.0" layoutY="454.0" mnemonicParsing="false" onAction="#updateProviderMaterials" prefHeight="23.0" prefWidth="72.0" text="update">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
